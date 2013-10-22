@@ -5,6 +5,8 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'turbolinks'
 
+ruby '2.0.0'
+
  group :production do
  	gem 'pg'
  end

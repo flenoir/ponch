@@ -1,8 +1,12 @@
+<% if user_signed_in? %>
+ <h> Vous êtes loggé  </h1>
+<% else %>
 <h1>Welcome to Ponch App</h1>
 <p>C'est la page principale de l'application Ponch faite par 
 <%= link_to "Fabien Lenoir", "http://www.fabienlenoir.fr" %>
 </p>
 
 <p>
-<%= link_to "Sign up now !", "#", class: "btn btn-primary btn-large" %>
+<%= link_to "Sign up now !", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
+<% end %>

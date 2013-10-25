@@ -4,6 +4,7 @@ gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'turbolinks'
+gem 'devise'
 
 ruby '2.0.0'
 

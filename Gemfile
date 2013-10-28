@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'turbolinks'
 gem 'devise'
+gem 'simple_form'
 
 ruby '2.0.0'
 

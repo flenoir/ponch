@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    <%= render @pins %> <!-- on remplace le each do par l'affichage des occurences de pin avec @ -->
+    <%= render @pins %> <!-- on remplace le each do par la variable globale @pins qui est définie dans son controlleur, à savoir "Pin.all"  -->
   </tbody>
 </table>
 

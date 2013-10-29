@@ -7,6 +7,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'simple_form'
 gem "paperclip"
+gem 'mini_exiftool'
 
 
 ruby '2.0.0'

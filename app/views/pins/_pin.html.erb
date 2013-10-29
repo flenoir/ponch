@@ -1,12 +1,23 @@
-  
+  <% video = MiniExiftool.new pin.image_file_name %> <!-- récupération des infos du fichier qui doit être à la racine de l'app -->
+  <%= video.TrackDuration %>
+
   <tr>
   		<td><%= image_tag pin.image(:thumb) %></td>
         <td><%= pin.description %></td>
         <td>Posté par <%= pin.user.name %></td>
+        <td><%= pin.image_file_name %></td>
+        <td>Durée <%= video.TrackDuration %></td>
         <td><%= link_to 'Show', pin %></td>
 	        <% if current_user == pin.user %>
 	        <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
 	        <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	        <% end%>
   </tr>
+ <% require 'mini_exiftool' 
+ photo = MiniExiftool.new 'feria.jpg' %> <!-- le require ne semble pas obligatoire -->
+ <%= photo.ImageSize %>
+
+
+ 
+ 
  

@@ -4,12 +4,14 @@
 	<div class= "span6 offste3">
 	<div class="well">
 
+	<%= image_tag @pin.image %> <!-- ajouter image_tag avant @pin pour afficher l'image elle même --> 
+
 <p>
   <%= @pin.description %>
-  <%= @pin.user.name %>
 </p>
 <p>
- ID <%= @pin.user.id %>
+<h4>Nom: <%= @pin.user.name %></h4>
+ID: <%= @pin.user.id %>
 </p>
 	<% if current_user == @pin.user %>
 	<%= link_to 'Edit', edit_pin_path(@pin) %> |

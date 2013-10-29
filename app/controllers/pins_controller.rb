@@ -58,6 +58,8 @@ class PinsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image) # IMPORTANT, sous Rails 4, permettre la sauvegarde de l'image dans la base de données 
+                                          # strong parameters puis nested parameters
     end
+
 end

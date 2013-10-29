@@ -19,3 +19,6 @@ doc/
 .project
 .DS_Store
 .idea
+
+#pour ignorer le dossier où les images sont stockées en local
+/public/system

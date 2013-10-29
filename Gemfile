@@ -6,6 +6,8 @@ gem 'rails_12factor'
 gem 'turbolinks'
 gem 'devise'
 gem 'simple_form'
+gem "paperclip"
+
 
 ruby '2.0.0'
 

@@ -5,9 +5,12 @@
 
   	<%= f.input :image, label: "Uploadez une image" %>
     <%= f.input :description, as: :text, input_html: { rows: "3"} %>
+    <!-- <% photo = MiniExiftool.new.find(params[:name])  %> -->
+     
 
 
   <div class="form-actions">
     <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
+

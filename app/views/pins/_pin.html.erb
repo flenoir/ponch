@@ -3,6 +3,8 @@
   		<td><%= image_tag pin.image(:thumb) %></td>
         <td><%= pin.description %></td>
         <td>Posté par <%= pin.user.name %></td>
+        <td><% video = MiniExiftool.new pin.image_file_name %> <!-- récupération des infos du fichier qui doit être à la racine de l'app -->
+  <%= video.ImageSize %></td>
         <td><%= link_to 'Show', pin %></td>
 	        <% if current_user == pin.user %>
 	        <td><%= link_to 'Edit', edit_pin_path(pin) %></td>

@@ -1,5 +1,5 @@
 class PinsController < ApplicationController
- before_filter :authenticate_user!, except: [:index]
+  before_filter :authenticate_user!, except: [:index]
 
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
 
@@ -28,6 +28,7 @@ class PinsController < ApplicationController
 
     if @pin.save
       redirect_to @pin, notice: 'Pin was successfully created.'
+      
     else
       render action: 'new'
     end

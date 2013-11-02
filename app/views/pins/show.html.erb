@@ -4,7 +4,7 @@
 	<div class= "span6 offste3">
 	<div class="well">
 
-	<%= image_tag @pin.image %> <!-- ajouter image_tag avant @pin pour afficher l'image elle même --> 
+	<%= image_tag @pin.image(:thumb)  %> <!-- ajouter image_tag avant @pin pour afficher l'image elle même, on met "image_tag pin.image" pour avoir l'image initiale --> 
 
 <p>
   <%= @pin.description %>
